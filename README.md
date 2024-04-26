@@ -1,40 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Laporan Praktikum
 
-## Getting Started
+|  | Pemrograman Berbasis Framework 2024 |
+|--|--|
+| NIM |  2141720153|
+| Nama |  Muhammad Fahmi Huwaidi |
+| Kelas | TI - 3I |
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Jawaban Soal 1
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Bukti setup environment telah berhasil di  komputer.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![Screenshot](assets-report/01.png)
+![Screenshot](assets-report/02.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Jawaban Soal 2
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Bukti setup environment telah berhasil di  komputer.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Screenshot]()
+![Screenshot]()
 
-## Learn More
+### Jawaban Soal 2
 
-To learn more about Next.js, take a look at the following resources:
+Bukti setup environment telah berhasil di  komputer.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Screenshot]()
+![Screenshot]()
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Jawaban Soal Practical Questions
+Assignments (Practical Questions)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+1. Importing useEffect within page/_app.tsx enables the provision of global configurations, cleanups, or side effects applicable across your entire Next.js application. This integration serves as an efficient means to centrally manage the functionality of the entire application by importing { useEffect } from "react" from the React library. The useEffect hook handles functional component side effects such as data fetching, external event subscriptions, and manual DOM interactions.
+
+2. Removing instructions akin to the one mentioned above, in my view, won't affect the useEffect structure. The referenced line primarily pertains to a Bootstrap command, which doesn't intersect with the useEffect process. Nevertheless, it may be articulated as such. The failure observed is attributed to the Bootstrap usage this time.
+
+3. To avert issues with the JavaScript class keyword and to accommodate JSX-compatible HTML tags, React and Next.js utilize className instead of class. Moreover, className functions as a directive to designate the CSS class within the specified className, like div className = container.
+
+4. Based on experimental observation, it's plausible to incorporate numerous Redux reducers into the store. Next.js can integrate Redux to manage the application's state, encompassing various reducers. Redux facilitates the construction of a singular store governing state managed by multiple reducers.
+
+5. Typically, in a Redux setup, the store.js file serves as the principal configuration file for establishing and configuring the Redux store. While adhering to a conventional naming convention, you possess the liberty to rename this file as desired. This facilitates Next.js developers in employing Redux configurations as a centralized setup.
+
+6. Within the page/login.tsx file, the code const { isLogin } = useSelector((state) => state.auth); utilizes the React Redux useSelector hook to extract the isLogin property from the authentication segment of the Redux store. This code snippet operates as follows:
+
+   - useSelector: A React Redux hook utilized to retrieve information from the Redux state. It returns selected data from the Redux state following the provision of a selector function.
+   - (state) · state.auth: The selector function accepted by useSelector returns the authentication state chunk after receiving the entire Redux state as input.
+   - { isLogin }: This snippet extracts the isLogin property from the Redux state's authentication slice through object destructuring, assigning it to the isLogin variable.
+
+7. The line const { totalCounter } = useSelector((state) => state.counter); within the page/counter.tsx file retrieves the totalCounter property from the Redux store's counter state by leveraging the useSelector hook from React Redux. The functions of each component in this code snippet are as follows:
+
+   - useSelector: A React Redux hook employed to fetch data from the Redux state. It returns selected data from the Redux state after receiving a selector function as input.
+   - (state) · state.counter: The selector function accepted by useSelector retrieves the counter state chunk after receiving the entire Redux state as an argument.
+   - { totalCounter }: This segment extracts the totalCounter property from the Redux state's counter slice via object destructuring, assigning its value to the totalCounter variable.
